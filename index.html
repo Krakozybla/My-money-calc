@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Личный колешелек расходов</h1>
+    </header>
+    <main>
+        <section class="balance">
+            <div class="wrap">
+                <div class="balance-info">
+                    <h1 class="balance-title">Баланс</h1>
+                    <span class="balance-total">0 ₽</span>
+                </div>
+                <div class="credit-info">
+                    <span class="income">0 ₽</span>
+                    <span class="expenses">0 ₽</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="history">
+            <div class="wrap">
+                <h3>История расходов</h3>
+                <ul class="history-list">
+                    <li class="history__item history__item-plus">Получил зарплату
+                        <span class="history__money">+30000 ₽</span>
+                        <button class="history_delete">x</button>
+                    </li>
+
+                    <li class="history__item  history__item-minus">Отдал долг
+                        <span class="history__money">-10000 ₽</span>
+                        <button class="history_delete">x</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="operation">
+            <div class="wrap">
+                <h4>Добавить операцию</h4>
+                <form class="form">
+                    <input type="text" class='operation-name' placeholder="Наименование опарации">
+                    <input type="number" class="operation-amount" placeholder="Введите сумму">
+                    <input type="submit" value="Добавить" class="operation-add">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
